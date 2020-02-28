@@ -154,13 +154,13 @@ New blog posts will be shown on the index page (the three most recent ones) of t
 
 ```md
 ---
-title: Introduction to "Defence against the Dark Arts"
+title: Arnas Kromelis
 date: 2019-11-07
-description: Defence Against the Dark Arts (abbreviated as DADA) is a subject taught at Hogwarts School of Witchcraft and Wizardry and Ilvermorny School of Witchcraft and Wizardry.
+description: Arnas Kromelis personal blog built with Gatsby
 tags:
   - Tutorial
   - Dark Arts
-banner: ./defence-against-the-dark-arts.jpg
+banner: ./banner.jpg
 ---
 ```
 

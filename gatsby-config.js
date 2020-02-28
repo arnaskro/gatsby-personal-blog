@@ -4,7 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Kromelis.lt - Arnas Kromelis personal website`,
+    siteDescription: `Arnas Kromelis personal website`,
+    siteTitle: `Arnas Kromelis`,
+    siteHeadline: `Site Headline`,
+    siteUrl: `https://kromelis.lt`,
+    siteLanguage: `en`,
+    siteImage: `/logo-black.png`,
+    author: `Arnas Kromelis`
   },
   plugins: [
     {
@@ -22,12 +29,16 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/arnas-kromelis-676924a2/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/arnaskro`,
+          },
+          {
+            name: `Email`,
+            url: `mailto:arnas@kromelis.lt`,
           },
         ],
       },
@@ -42,12 +53,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Arnas Kromelis`,
+        short_name: `kromelis-lt`,
+        description: `Arnas Kromelis personal portfolio blog.`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#6B46C1`,
+        theme_color: `#333`,
         display: `standalone`,
         icons: [
           {
