@@ -1,0 +1,53 @@
+---
+title: Hello, World!
+date: 2020-02-28
+tags:
+  - Other
+---
+
+This is my first blog post in the new redesigned website!
+
+Someday I will start writing some posts about the projects I have done and some interesting blog posts related to programming.
+
+To mention some features about the new website apart from the redesign, now I will be able to add live code example like so:
+
+```jsx
+import React from "react";
+
+const Post = ({ data: { post } }) => (
+  <Layout>
+    <Heading variant="h2" as="h2">
+      {post.title}
+    </Heading>
+    <p
+      sx={{
+        color: `secondary`,
+        mt: 3,
+        a: { color: `secondary` },
+        fontSize: [1, 1, 2]
+      }}
+    >
+      <span>{post.date}</span>
+      {post.tags && (
+        <React.Fragment>
+          {` — `}
+          <ItemTags tags={post.tags} />
+        </React.Fragment>
+      )}
+    </p>
+    <section
+      sx={{
+        ...CodeStyles,
+        my: 5,
+        ".gatsby-resp-image-wrapper": { my: 5, boxShadow: `lg` }
+      }}
+    >
+      <MDXRenderer>{post.body}</MDXRenderer>
+    </section>
+  </Layout>
+);
+
+export default Post;
+```
+
+See you soon! 😉
