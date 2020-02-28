@@ -2,7 +2,59 @@
 title: About
 slug: "/about"
 ---
+import Year from './Year'
+import Image from './Image'
+import Expertise from './Expertise'
 
-Hi!
 
-My name is Arnas Kromelis
+I am a <Year birthDate="1995-05-13" /> years old software engineer from Lithuania.
+
+Currently I am located in Oslo, Norway and working at DNB which is Norways largest bank.
+
+I've been passionate about technology and programming since I was 12 years old, since then I’ve seen many projects being developed successfully or failing in doing so. I learned from the mistakes others and myself have made, because only that and practice can make you become better at something.
+
+I’ve always had a big interest in technologies thus I’m constantly keeping myself up-to-date and experiment with the newest web technologies and development standards. I always want to stay one step ahead. By focusing on the future we can realize bigger opportunities.
+
+On my free time I try to build great things!
+
+
+### Principles
+What are my principles?
+
+Web should be easy to use. The web applications I develop are accessibility compliant, simple, obvious, dinstinctive and functional. This helps to engage the audience. Web is for everyone. The websites and web apps I develop tend to reach the widest audience possible. This helps to achieve business goals.
+
+
+### Skills
+Who do I know?
+
+I have tried out many programming languages, but there were only a few of which cought my interests and attention. The list below is of those languages where I feel confident using them in everyday work. The list also includes some frameworks and tool of which I know how to use.
+
+- JavaScript
+- React
+- Python
+- Django
+- Ruby On Rails
+- PHP
+- HTML, CSS
+- SQL
+- SCRUM
+- GIT
+- AWS *(Certified AWS Developer Associate)*
+
+<Expertise data={[
+    {
+        title: 'Problem Solving',
+        image: <Image alt="Problem Solving" image={'/assets/problem-solving.png'} />,
+        text: 'I can analyze the issue and come up with a solution for the problem. I have skills for project management and team leading using SCRUM and Agile.'
+    },
+    {
+        title: 'Software Engineering',
+        image: <Image alt="Software Engineering" image={'/assets/software-development.png'} />,
+        text: 'I am capabale of developing and maintaining web, mobile or desktop applications.'
+    },
+    {
+        title: 'UX Design',
+        image: <Image alt="UX Design" image={'/assets/design.png'} />,
+        text: 'To achieve the best user experience, I try to understand what the user wants and needs. I consider Universal Accessibility, Prototyping, Responsive Design as high priorities.'
+    }
+]} />
